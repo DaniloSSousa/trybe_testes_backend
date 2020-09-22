@@ -1,2 +1,2 @@
 # trybe_tests_backend
-Repositório de testes para os exercícios de backend
+Test repository for backend exercises
