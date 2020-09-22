@@ -1,18 +1,18 @@
-## Exercícios de queries do mongodb
+## Mongodb queries exercises
 
-1: Utilizando o estágio $match, escreva uma agregação para retornar somente os clientes do sexo "MASCULINO".
+1: Using the $ match stage, write an aggregation to return only customers of the "MALE" gender.
 
-2: Utilizando o estágio $match, escreva uma agregação para retornar somente os clientes do sexo "FEMININO" e com data de nascimento entre os anos de 1995 e 2005.
+2: Using the $ match stage, write an aggregation to return only customers of the gender "FEMALE" and with birth data between the years 1995 and 2005.
 
-3: Utilizando o estágio $match, escreva uma agregação para retornar somente os clientes do sexo "FEMININO" e com data de nascimento entre os anos de 1995 e 2005, limitando a quantidade de documentos retornados em 5.
+3: Using the $ correspondence stage, write an aggregation to return only customers of the gender "FEMALE" and with birth data between the years 1995 and 2005, limiting the number of documents returned to 5.
 
-4: Conte quantos clientes do estado SC existem na coleção. Retorne um documento em que o campo _id contenha a UF e outro campo com o total.
+4: Count how many SC state customers are in the collection. Return a document where the _id field contains the UF and another field with the total.
 
-5: Agrupe os clientes por sexo. Retorne o total de clientes de cada sexo no campo total.
+5: Group customers by gender. Return the total number of customers of each sex in the total field.
 
-6: Agrupe os clientes por sexo e uf. Retorne o total de clientes de cada sexo no campo total.
+6: Group customers by gender and uf. Return the total number of customers of each sex in the total field.
 
-7: Utilizando a mesma agregação do exercício anterior, adicione um estágio de projeção para modificar os documentos de saída, de forma que se pareçam com o documento abaixo (não se importe com a ordem dos campos):
+7: Use the same aggregation as in the previous exercise, perform a projection stage to modify the output documents, so that they look like the document below (don't mind the order of the fields):
 ```
 {
   "estado": "SP",
@@ -21,16 +21,16 @@
 }
 ```
 
-8: Descubra quais são os 5 clientes que gastaram o maior valor.
+8: Find out which 5 customers have spent the most.
 
-9: Descubra quais são os 10 clientes que gastaram o maior valor no ano de 2019.
+9: Find out which are the 10 customers who spent the highest amount in 2019.
 
-10: Descubra quantos clientes compraram mais de 5 vezes. Retorne um documento que contenha somente o campo clientes com o total de clientes.
-Dica: O operador $count pode simplificar sua query.
+10: Find out how many customers have purchased more than 5 times. Return a document that contains only the customers field with the total customers.
+Tip: The $ count operator can simplify your query.
 
-11: Descubra quantos clientes compraram menos de três vezes entre os meses de Janeiro de 2020 e Março de 2020.
+11: Find out how many customers bought less than three times between January 2020 and March 2020.
 
-12: Descubra qual as três ufs que mais compraram no ano de 2020. Retorne os documentos no seguinte formato:
+12: Find out which three UFUs bought the most in 2020. Return the documents in the following format:
 ```
 {
   "totalVendas": 10,
@@ -38,7 +38,7 @@ Dica: O operador $count pode simplificar sua query.
 }
 ```
 
-13: Encontre qual foi o total de vendas e a média de vendas de cada uf no ano de 2019. Ordene os resultados pelo nome da uf. Retorne os documentos no seguinte formato:
+13: Find the total sales and average sales for each uf in 2019. Sort the results by the uf name. Return the documents in the following format:
 ```
 {
   "_id": "MG",
@@ -47,3 +47,4 @@ Dica: O operador $count pode simplificar sua query.
 }
 ```
 
+:)
