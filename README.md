@@ -46,4 +46,4 @@ Dica: O operador $count pode simplificar sua query.
   "totalVendas": 142
 }
 ```
-:)
+
