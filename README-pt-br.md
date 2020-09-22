@@ -30,7 +30,7 @@ Dica: O operador $count pode simplificar sua query.
 
 11: Descubra quantos clientes compraram menos de três vezes entre os meses de Janeiro de 2020 e Março de 2020.
 
-12: Descubra qual as três ufs que mais compraram no ano de 2020. Retorne os documentos no seguinte formato:
+12: Descubra qual as três UFs que mais compraram no ano de 2020. Retorne os documentos no seguinte formato:
 ```
 {
   "totalVendas": 10,

@@ -30,7 +30,7 @@ Tip: The $ count operator can simplify your query.
 
 11: Find out how many customers bought less than three times between January 2020 and March 2020.
 
-12: Find out which three UFUs bought the most in 2020. Return the documents in the following format:
+12: Find out which three UFs bought the most in 2020. Return the documents in the following format:
 ```
 {
   "totalVendas": 10,
