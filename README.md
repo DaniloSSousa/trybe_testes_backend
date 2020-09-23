@@ -1,25 +1,25 @@
 ## Mongodb queries exercises
 
-**1**: Utilize uma combinação das expressões aritméticas e adicione um campo chamado idade à coleção clientes. Algumas dicas:
-- arredonde para baixo o valor da idade;
-- calcule a idade usando a diferença entre a data corrente e a data de nascimento;
-- 1 dia é igual a 86400000 milissegundos.
+**1**: Use a combination of arithmetic expressions and add a field called age to the customers collection. Some tips:
+- Round the age value down;
+- Calculate age using the difference between the current date and the date of birth;
+- 1 day is equal to 86400000 milliseconds.
 
-**2**: Utilizando o novo campo idade, conte quantos clientes têm entre 18 e 25 anos.
+**2**: Using the new age field, count how many customers are between 18 and 25 years old.
 
-**3**: Remova os estágios $count e $match do exercício anterior e adicione um estágio no pipeline que coloque as compras do cliente no campo compras.
+**3**: Remove the $ count and $ match stages from the previous exercise and add a stage in the pipeline that places the customer's purchases in the purchases field.
 
-**4**: Selecione TODOS os clientes que compraram entre Junho de 2019 e Março de 2020.
+**4**: Select ALL customers who purchased between June 2019 and March 2020.
 
-**5**: Confira o número de documentos retornados pelo pipeline com o método itcount(). Até aqui você deve ter 486 documentos sendo retornados.
+**5**: Check the number of documents returned by the pipeline with the itcount () method. By now you should have 486 documents being returned.
 
-**6**: Deixe apenas os top 10 clientes com mais compras nesse período.
+**6**: Leave only the top 10 customers with more purchases in that period.
 
-**7**: Para esses clientes, adicione um campo chamado compras.valorComDesconto em todas as compras do período, aplicando 10% de desconto sobre o valor total da compra (valorTotal).
+**7**: For these customers, add a field called Compras.valorComDesconto in all purchases in the period, applying 10% discount on the total purchase amount (Total value).
 
-**8**: Ainda nesse pipeline, descubra os 5 estados com mais compras.
+**8**: Still in this pipeline, discover the 5 states with the most purchases.
 
-**9**: Descubra o cliente que mais consumiu QUEIJO PRATO. Retorne um documento com a seguinte estrutura:
+**9**: Discover the customer who consumed the most CHEESE PRATO. Return a document with the following structure:
 ```
 {
   "nomeCliente": "NOME",
@@ -28,9 +28,10 @@
 }
 ```
 
-**10**: Selecione todas as vendas do mês de Março de 2020, com status EM SEPARACAO. Acrescente um campo chamado dataEntregaPrevista com valor igual a três dias após a data da venda. Retorne apenas os campos clienteId, dataVenda e dataEntregaPrevista.
+**10**: Select all sales in March 2020, with SEPARATE status. Add a field called dataEntregaPrevista with a value equal to three days after the date of sale. Return only the fields customerId, dateSale and dateDeliveryDelivery.
 
 ## Bonus
-**11**: Calcule a diferença absoluta em dias entre a data da primeira entrega prevista e a última, considerando o pipeline do exercício 10.
+
+**11**: Calculate the absolute difference in days between the date of the first scheduled delivery and the last, considering the pipeline for exercise 10.
 
 :)
